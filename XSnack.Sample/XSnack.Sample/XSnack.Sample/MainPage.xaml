@@ -11,7 +11,7 @@
         <Label HorizontalOptions="Center" Text="Select duration" />
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
             <Label Text="{Binding Source={x:Reference durationStepper}, Path=Value}" />
-            <Stepper Increment="1" Value="5000" Minimum="1" Maximum="199999" x:Name="durationStepper" HorizontalOptions="CenterAndExpand"/>
+            <Stepper Increment="1" Value="5" Minimum="1" Maximum="199999" x:Name="durationStepper" HorizontalOptions="CenterAndExpand"/>
         </StackLayout>
         <Button Text="Display snackbar" Command="{Binding DisplaySnackbarCommand}" />
     </StackLayout>

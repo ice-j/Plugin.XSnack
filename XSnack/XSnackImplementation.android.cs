@@ -3,6 +3,7 @@ using Android.App;
 using Android.Support.Design.Widget;
 using Android.Views;
 using Plugin.CurrentActivity;
+using System;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
@@ -44,7 +45,9 @@ namespace Plugin.XSnack
             var context = CrossCurrentActivity.Current.Activity ?? Android.App.Application.Context as Activity;
 
             var snack = Snackbar.Make(context.FindViewById<View>(Resource.Id.Content), message, Snackbar.LengthIndefinite);
-            snack.SetDuration(duration);
+
+
+            snack.SetDuration(duration * 1000);
             if (actionCommand != null)
                 snack.SetAction(actionText, (view) =>
                 {

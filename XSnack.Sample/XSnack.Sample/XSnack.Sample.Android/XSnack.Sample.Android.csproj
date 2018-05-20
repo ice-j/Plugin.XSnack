@@ -51,9 +51,6 @@
     <PackageReference Include="Plugin.CurrentActivity">
       <Version>2.1.0.2</Version>
     </PackageReference>
-    <PackageReference Include="Plugin.XSnack">
-      <Version>1.0.1</Version>
-    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.0.0.446417" />
     <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2" />
@@ -97,6 +94,10 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\XSnack\XSnack.csproj">
+      <Project>{0fcdb279-3ca4-4e07-8ce8-87be0359d08a}</Project>
+      <Name>XSnack</Name>
+    </ProjectReference>
     <ProjectReference Include="..\XSnack.Sample\XSnack.Sample.csproj">
       <Project>{3BE187BA-A1D8-4D4A-ACA8-BCEDEBE8D85E}</Project>
       <Name>XSnack.Sample</Name>
