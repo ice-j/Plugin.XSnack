@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <!--Work around so the conditions work below-->
@@ -13,10 +13,10 @@
     <PackageId>Plugin.XSnack</PackageId>
     
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
-    <Version>1.0.0.0</Version>
-    <PackageVersion>1.0.0.0</PackageVersion>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <AssemblyFileVersion>1.0.1.0</AssemblyFileVersion>
+    <Version>1.0.1</Version>
+    <PackageVersion>1.0.1.0</PackageVersion>
     <PackOnBuild>true</PackOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
     <LangVersion>default</LangVersion>
@@ -27,22 +27,24 @@
 
     <LangVersion>7.1</LangVersion>
     
-    <!--TODO: Fill these in-->
-    <PackageLicenseUrl>LINK TO LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>LINK TO PROJECT</PackageProjectUrl>
-    <RepositoryUrl>LINK TO PROJECT</RepositoryUrl>
-    <PackageReleaseNotes>RELEASE NOTES</PackageReleaseNotes>
-    <PackageIconUrl>ICON URL</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/ice-j/Plugin.XSnack/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/ice-j/Plugin.XSnack/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ice-j/Plugin.XSnack.git</RepositoryUrl>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageIconUrl></PackageIconUrl>
     <PackageTags>xamarin, windows, ios, android, xamarin.forms, plugin, XSnack</PackageTags>
     
     <Title>XSnack Plugin for Xamarin and Windows</Title>
-    <Summary>Summary of nuget</Summary>
-    <Description>Plugin Description</Description>
+    <Summary>Snackbar plugin for Xamarin.Forms</Summary>
+    <Description>Snackbar plugin for Xamarin.Forms</Description>
     
     
-    <Owners>YOU</Owners>
-    <Authors>YOU</Authors>
+    <Owners>Ice Jovanoski</Owners>
+    <Authors>Ice Jovanoski</Authors>
     <Copyright>Copyright 2018</Copyright>
+    <Company />
+    <RepositoryType>git</RepositoryType>
+    <FileVersion>1.0.1.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
@@ -77,10 +79,14 @@
 
   <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
     <Compile Include="**\*.android.cs" />
+    <PackageReference Include="Plugin.CurrentActivity" Version="2.1.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="25.1.0" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="25.1.0" />
   </ItemGroup>
 
   <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
     <Compile Include="**\*.apple.cs" />
+    <PackageReference Include="TTGSnackbar" Version="1.3.5" />
   </ItemGroup>
 
   <!--Additional item groups-->
