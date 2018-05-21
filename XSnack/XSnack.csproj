@@ -12,11 +12,11 @@
     <RootNamespace>Plugin.XSnack</RootNamespace>
     <PackageId>Plugin.XSnack</PackageId>
     
-    <Product>$(AssemblyName) ($(TargetFramework))</Product>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <AssemblyFileVersion>1.0.1.0</AssemblyFileVersion>
-    <Version>1.0.1</Version>
-    <PackageVersion>1.0.1.0</PackageVersion>
+    <Product>Plugin.XSnack</Product>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
+    <Version>1.0.0</Version>
+    <PackageVersion>1.0.0.0</PackageVersion>
     <PackOnBuild>true</PackOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
     <LangVersion>default</LangVersion>
@@ -44,7 +44,7 @@
     <Copyright>Copyright 2018</Copyright>
     <Company />
     <RepositoryType>git</RepositoryType>
-    <FileVersion>1.0.1.0</FileVersion>
+    <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">

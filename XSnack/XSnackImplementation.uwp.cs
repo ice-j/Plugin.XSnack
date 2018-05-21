@@ -13,11 +13,11 @@ namespace Plugin.XSnack
         /// Displays a message and an optional action button within a snackbar
         /// </summary>
         /// <param name="message">The message you want to be displayed</param>
-        /// <param name="duration">Duration of the snackbar (Default 5 seconds)</param>
+        /// <param name="duration">Duration of the snackbar in seconds (Default 3 seconds)</param>
         /// <param name="actionText">Text for the action button (optional)</param>
         /// <param name="actionCommand">Callback command for the action button (optional)</param>
         /// <returns></returns>
-        public Task ShowMessageAsync(string message, int duration = 5, string actionText = null, ICommand actionCommand = null)
+        public Task ShowMessageAsync(string message, int duration = 3, string actionText = null, ICommand actionCommand = null)
         {
             throw new NotImplementedException();
         }
@@ -26,11 +26,11 @@ namespace Plugin.XSnack
         /// Displays a message and an optional action button within a snackbar
         /// </summary>
         /// <param name="message">The message you want to be displayed</param>
-        /// <param name="duration">Duration of the snackbar (Default 5 seconds)</param>
+        /// <param name="duration">Duration of the snackbar in seconds (Default 5 seconds)</param>
         /// <param name="actionText">Text for the action button (optional)</param>
         /// <param name="actionCommand">Callback command for the action button (optional)</param>
         /// <returns></returns>
-        void IXSnack.ShowMessage(string message, int duration, string actionText, ICommand actionCommand)
+        public void ShowMessage(string message, int duration = 3, string actionText = null, ICommand actionCommand = null)
         {
             throw new NotImplementedException();
         }

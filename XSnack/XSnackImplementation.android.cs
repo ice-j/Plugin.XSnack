@@ -18,11 +18,11 @@ namespace Plugin.XSnack
         /// Displays a message and an optional action button within a snackbar
         /// </summary>
         /// <param name="message">The message you want to be displayed</param>
-        /// <param name="duration">Duration of the snackbar (Default 5 seconds)</param>
+        /// <param name="duration">Duration of the snackbar in seconds (Default 3 seconds)</param>
         /// <param name="actionText">Text for the action button (optional)</param>
         /// <param name="actionCommand">Callback command for the action button (optional)</param>
         /// <returns></returns>
-        public Task ShowMessageAsync(string message, int duration = 5, string actionText = null, ICommand actionCommand = null)
+        public Task ShowMessageAsync(string message, int duration = 3, string actionText = null, ICommand actionCommand = null)
         {
             DisplayMessage(message, duration, actionText, actionCommand);
 
@@ -33,14 +33,14 @@ namespace Plugin.XSnack
         /// Displays a message and an optional action button within a snackbar
         /// </summary>
         /// <param name="message">The message you want to be displayed</param>
-        /// <param name="duration">Duration of the snackbar (Default 5 seconds)</param>
+        /// <param name="duration">Duration of the snackbar in seconds (Default 3 seconds)</param>
         /// <param name="actionText">Text for the action button (optional)</param>
         /// <param name="actionCommand">Callback command for the action button (optional)</param>
         /// <returns></returns>
-        public void ShowMessage(string message, int duration = 5, string actionText = null, ICommand actionCommand = null)
+        public void ShowMessage(string message, int duration = 3, string actionText = null, ICommand actionCommand = null)
             => DisplayMessage(message, duration, actionText, actionCommand);
 
-        void DisplayMessage(string message, int duration = 5, string actionText = null, ICommand actionCommand = null)
+        void DisplayMessage(string message, int duration, string actionText, ICommand actionCommand)
         {
             var context = CrossCurrentActivity.Current.Activity ?? Android.App.Application.Context as Activity;
 
