@@ -9,7 +9,7 @@ Soon...
 Get started by reading through the [Snackbar Plugin documentation](https://github.com/ice-j/Plugin.XSnack/wiki).
 
 ## NuGet
-* Available on NuGet: [Plugin.XSnack](http://www.nuget.org/packages/Plugin.XSnack) [(https://img.shields.io/nuget/v/Plugin.XSnack.svg?label=NuGet)](https://www.nuget.org/packages/Plugin.XSnack)
+* Available on NuGet: [Plugin.XSnack](http://www.nuget.org/packages/Plugin.XSnack) [![NuGet](https://img.shields.io/nuget/v/Plugin.XSnack.svg?label=NuGet)](https://www.nuget.org/packages/Plugin.XSnack)
 
 ## Build: 
 * ![Build status](https://icejovanoski.visualstudio.com/_apis/public/build/definitions/d1e75b13-c0ad-473e-a989-861a16ab1ad6/1/badge)
