@@ -19,7 +19,7 @@ Get started by reading through the [Snackbar Plugin documentation](https://githu
 |Platform|Version|
 | ------------------- | :------------------: |
 |Xamarin.iOS|iOS 8+|
-|Xamarin.Android|API 24+|
+|Xamarin.Android|API 21+|
 |Windows 10 UWP|Unsupported|
 
 ## iOS Implementation
