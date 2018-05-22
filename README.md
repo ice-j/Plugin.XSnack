@@ -6,7 +6,7 @@ Simple cross platform plugin to display short notification messages to the user.
 Soon...
 
 ## Documentation
-Get started by reading through the [Snackbar Plugin documentation](wiki/Snackbar-Plugin-Documentation).
+Get started by reading through the [Snackbar Plugin documentation](https://github.com/ice-j/Plugin.XSnack/wiki).
 
 ## NuGet
 * Available on NuGet: [Plugin.XSnack](http://www.nuget.org/packages/Xam.Plugin.Connectivity) [![NuGet](https://img.shields.io/nuget/v/Xam.Plugin.Connectivity.svg?label=NuGet)](https://www.nuget.org/packages/Xam.Plugin.Connectivity/)
