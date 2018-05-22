@@ -22,6 +22,9 @@ Get started by reading through the [Snackbar Plugin documentation](https://githu
 |Xamarin.Android|API 24+|
 |Windows 10 UWP|Unsupported|
 
+## iOS Implementation
+Plugin.XSnack uses TTGSnackbar on iOS. For issues or more info, checkout the [TTGSnackbar repo](https://github.com/MarcBruins/TTGSnackbar-Xamarin-iOS)
+
 ### Keep in touch
 * Twitter: [@jovanoskii](http://twitter.com/jovanoskii)
 * Blog: [Ice.Codes](http://ice.codes)
